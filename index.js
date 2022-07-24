@@ -3,7 +3,7 @@
 // let searchString    =  "/\\" + begin + "\\w*\\" + end + "?/gims";
 let searchString = new RegExp(/\[[a-zA-Z0-9# ]*\]/g);
 
-
+//test
 
 let song            = document.querySelector("#song");
 let addDummy        = document.querySelector("#add-dummy");
