@@ -1,7 +1,7 @@
 // let begin           = document.querySelector("#begin").value;
 // let end             = document.querySelector("#end").value;
 // let searchString    =  "/\\" + begin + "\\w*\\" + end + "?/gims";
-
+let searchString = new RegExp(/\[[a-zA-Z0-9# ]*\]/g);
 
 
 
@@ -12,7 +12,7 @@ let removeChords    = document.querySelector("#remove-chords");
 
 
 removeChords.onclick = function() {
-    song.value = song.value.replace(/\[\w*\]?/gims, '');
+    song.value = song.value.replace(searchString, '');
     console.log(song.value);
 }
 
