@@ -20,7 +20,7 @@ addDummy.onclick = function() {
 
 
 
-
+// This probably works too: /\[.*?\]\s*/g
 
 
 
